@@ -1,7 +1,12 @@
 /*
  * Author: Alex Jenkins
  * Date created: 2/9/22
- * Date last udpated: 2/9/22 */
+ * 
+ * Last updated by:
+ * Date last udpated: 2/9/22 
+ * 
+ * Description: Control projectile motion
+ */
 
 
 using System.Collections;
