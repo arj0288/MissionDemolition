@@ -46,6 +46,7 @@ public class FollowCam : MonoBehaviour
             {
                 if(POI.GetComponent<Rigidbody>().IsSleeping())
                 {
+                    Destroy(POI);
                     POI = null;
                 }
             }
