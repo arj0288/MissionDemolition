@@ -15,6 +15,7 @@ using UnityEngine;
 public class FollowCam : MonoBehaviour
 {
 
+    static public FollowCam S;
     static public GameObject POI; //static point of interest
     public float camZ;//desired z pos of camera
 
@@ -22,8 +23,10 @@ public class FollowCam : MonoBehaviour
     public float easing = .05f;
     public Vector2 minXY = Vector2.zero;
 
+
     private void Awake()
     {
+        S = this;
         camZ = this.transform.position.z;
     }
 

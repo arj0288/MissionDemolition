@@ -14,7 +14,7 @@ using UnityEngine;
 
 public class ProjectileLine : MonoBehaviour
 {
-    static public ProjectileLine s;
+    static public ProjectileLine S;
 
     [Header("Set in inspector")]
     public float minDist = .1f;
@@ -25,7 +25,7 @@ public class ProjectileLine : MonoBehaviour
 
     private void Awake()
     {
-        s = this;
+        S = this;
         line = GetComponent<LineRenderer>();
         line.enabled = false;
         points = new List<Vector3>();
